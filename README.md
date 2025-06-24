@@ -6,7 +6,7 @@ This project is a deep learning-based real-time facial emotion recognition syste
 
 - Real-time video emotion recognition
 - Trained with custom CNN and pre-trained deep learning models
-- Streamlit/Flask-based app interface (`app.py`)
+- Streamlit/Flask-based app interface (app.py)
 - Visualization of training metrics and architecture
 - Includes output demo videos
 
@@ -16,9 +16,9 @@ This project is a deep learning-based real-time facial emotion recognition syste
 - VGG19
 - Xception
 - Vision Transformers (ViT)
-- Final model exported as `model_filter.h5`
+- Final model exported as model_filter.h5
 
-## 🗂️ Project Structure
+## 🗂 Project Structure
 
 ├── app.py # Main application for real-time prediction
 ├── model_filter.h5 # Final trained model
@@ -71,4 +71,3 @@ TensorFlow and Keras
 FER2013 and other facial expression datasets
 
 Pre-trained weights for VGG19, Xception
-
