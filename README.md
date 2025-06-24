@@ -48,10 +48,6 @@ Copy code
 python app.py
 The webcam will open and display live emotion predictions on your face.
 
-🎥 Demo
-OUTPUT_VIDEO.mp4: shows the model working on a real-time video stream.
-
-Screen Recording 2025-05-05.mp4: project walkthrough recording.
 
 📊 Dataset
 Custom dataset under /Dataset/ with labeled emotion images.
