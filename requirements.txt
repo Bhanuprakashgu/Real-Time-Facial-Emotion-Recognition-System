@@ -3,13 +3,3 @@ tensorflow==2.13.0
 numpy==1.24.3
 pillow==10.4.0
 
-
-
-
-run the project : python app.py
-
-
-username: admin@gmail.com
-password: admin
-
-#Python==3.8
