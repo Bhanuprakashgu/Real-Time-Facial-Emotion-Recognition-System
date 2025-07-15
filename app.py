@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, session
+from flask import Flask, render_template, request, redirect, url_for, flash
 from werkzeug.utils import secure_filename
 import os
 import numpy as np
@@ -21,24 +21,6 @@ if not os.path.exists(UPLOAD_FOLDER):
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
-
-USERNAME = 'admin@gmail.com'
-PASSWORD = 'admin'
-
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        
-        if username == USERNAME and password == PASSWORD:
-            session['user_id'] = username  
-            flash('Login successful!', 'success')
-            return redirect(url_for('index'))  
-        else:
-            flash('Invalid username or password', 'danger')
-    
-    return render_template('login.html')
 
 @app.route('/input')
 def index():
